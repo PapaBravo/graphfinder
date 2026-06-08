@@ -27,17 +27,17 @@ The example snapshot is regenerated automatically before `dev` and `build`.
 npm run build
 ```
 
-The production files are written to `/tmp/workspace/PapaBravo/graphfinder/dist`.
+The production files are written to `./dist`.
 
 ## Example dataset
 
-The source dataset lives in `/tmp/workspace/PapaBravo/graphfinder/data/seed.cypher`.
-During `npm run generate:data`, it is loaded into the vendored LoraDB WASM runtime and exported to `/tmp/workspace/PapaBravo/graphfinder/public/data/example.lorasnap`.
+The source dataset lives in `./data/seed.cypher`.
+During `npm run generate:data`, it is loaded into the vendored LoraDB WASM runtime and exported to `./public/data/example.lorasnap`.
 
 ## Deployment
 
-The workflow at `/tmp/workspace/PapaBravo/graphfinder/.github/workflows/deploy-pages.yml` installs dependencies, rebuilds the example snapshot, builds the app, and deploys the static output to GitHub Pages.
+The workflow at `./.github/workflows/deploy-pages.yml` installs dependencies, rebuilds the example snapshot, builds the app, and deploys the static output to GitHub Pages.
 
 ## Vendored runtime
 
-This repository vendors the LoraDB WASM browser and Node bindings for version `0.15.0` under `/tmp/workspace/PapaBravo/graphfinder/vendor/loradb-wasm` because the published npm package omits the runtime `pkg-node` and `pkg-web` artifacts needed by this app.
+This repository vendors the LoraDB WASM browser and Node bindings for version `0.15.0` under `./vendor/loradb-wasm` because the published npm package omits the runtime `pkg-node` and `pkg-web` artifacts needed by this app.
