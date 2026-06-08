@@ -1,14 +1,20 @@
 {
   "name": "graphfinder",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "npm run generate:data",
     "dev": "vite",
+    "generate:data": "node ./scripts/build-dataset.mjs",
+    "prebuild": "npm run generate:data",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "cytoscape": "3.34.0"
+  },
   "devDependencies": {
-    "vite": "^8.0.12"
+    "vite": "8.0.16"
   }
 }
