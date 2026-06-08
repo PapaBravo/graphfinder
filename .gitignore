@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 dist
+!vendor/loradb-wasm/dist/
+!vendor/loradb-wasm/dist/*.js
 dist-ssr
 *.local
 
