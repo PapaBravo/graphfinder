@@ -2,12 +2,12 @@
 
 ## Repository state
 - This repository is currently a greenfield skeleton.
-- Tracked files at onboarding time are limited to `/tmp/workspace/PapaBravo/graphfinder/README.md` and `/tmp/workspace/PapaBravo/graphfinder/LICENSE`.
+- Tracked files at onboarding time are limited to `README.md` and `LICENSE`.
 - There is no application code, no dependency manifest, no build configuration, no CI workflow, and no existing test suite yet.
 
 ## How to work efficiently here
 - Start every task by confirming whether new source files, a project structure, or a language/toolchain need to be introduced, because the repository does not establish them yet.
-- Treat `/tmp/workspace/PapaBravo/graphfinder/README.md` as the only existing project documentation until more docs are added.
+- Treat `README.md` as the only existing project documentation until more docs are added.
 - Keep changes small and intentional; in an empty repository, even small additions define future structure and conventions.
 - Prefer creating the minimum scaffolding needed for the requested task instead of inventing broad architecture up front.
 - When adding the first implementation, also add the corresponding basic developer workflow documentation so future agents can discover how to build, lint, and test it.
@@ -23,6 +23,6 @@
 - If requirements are ambiguous, ask for clarification instead of assuming a language, framework, storage model, or deployment target.
 
 ## Errors encountered during onboarding
-- Attempting to inspect `/tmp/workspace/PapaBravo/graphfinder/.github` initially failed because the directory did not exist.
-- Work-around: inspect the repository root, README, and git tree/history directly, then create `/tmp/workspace/PapaBravo/graphfinder/.github/copilot-instructions.md`.
+- Attempting to inspect `/.github` initially failed because the directory did not exist.
+- Work-around: inspect the repository root, README, and git tree/history directly, then create `/.github/copilot-instructions.md`.
 - No build, lint, or test commands were available to run during onboarding because the repository has no project tooling yet.
