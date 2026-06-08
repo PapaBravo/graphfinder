@@ -23,6 +23,6 @@
 - If requirements are ambiguous, ask for clarification instead of assuming a language, framework, storage model, or deployment target.
 
 ## Errors encountered during onboarding
-- Attempting to inspect `/.github` initially failed because the directory did not exist.
-- Work-around: inspect the repository root, README, and git tree/history directly, then create `/.github/copilot-instructions.md`.
+- Attempting to inspect `.github` initially failed because the directory did not exist.
+- Work-around: inspect the repository root, README, and git tree/history directly, then create `.github/copilot-instructions.md`.
 - No build, lint, or test commands were available to run during onboarding because the repository has no project tooling yet.
